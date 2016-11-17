@@ -1,0 +1,120 @@
+/* elements */
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    cursor: none;
+    font-family: Helvetica, Arial;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* bg */
+
+.bg {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* detail */
+
+.detail {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    position: relative;
+    transition: opacity 1s;
+    z-index: 2;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body.show .detail {
+    opacity: 1;
+}
+
+table {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 15px;
+}
+
+th, td {
+    padding: 3px;
+    text-transform: capitalize;
+}
+
+th {
+    text-align: right;
+}
+
+/* reload */
+
+.reload {
+    background: url(../images/reload.png) #000 no-repeat 50% 50%;
+    background-size: 24px 24px;
+    bottom: 10px;
+    color: #fff;
+    height: 24px;
+    opacity: 0;
+    padding: 15px 20px;
+    position: fixed;
+    right: 10px;
+    text-decoration: none;
+    width: 24px;
+    z-index: 3;
+}
+
+body.show .reload {
+    opacity: 1;
+}
+
+/* url */
+
+.url {
+    background: #000;
+    bottom:10px;
+    color: #fff;
+    font-size: 12px;
+    left: 10px;
+    opacity: 0;
+    padding: 10px 15px;
+    position: fixed;
+    transition: opacity 1s;
+    z-index: 3;
+}
+
+body.show .url {
+    opacity: 0.75;
+}

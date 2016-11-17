@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Plane Spotter</title>
+    <link rel="stylesheet" href="css/plane-spotter.css">
+  </head>
+  <body>
+    <div class="detail">
+      <table>
+        <tbody>
+          <tr>
+            <th>Route</th>
+            <td class="route"></td>
+          </tr>
+          <tr>
+            <th>Flight number</th>
+            <td class="flight-number"></td>
+          </tr>
+          <tr>
+            <th>Altitude</th>
+            <td class="altitude"></td>
+          </tr>
+          <tr>
+            <th>Latitude</th>
+            <td class="latitude"></td>
+          </tr>
+          <tr>
+            <th>Longitude</th>
+            <td class="longitude"></td>
+          </tr>
+          <tr>
+            <th>Speed</th>
+            <td class="speed"></td>
+          </tr>
+          <tr>
+            <th>Distance</th>
+            <td class="distance"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bg"></div>
+
+    <p class="url"></p>
+
+    <a class="reload" href="#" title="Reload"></a>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/plane-spotter.js"></script>
+  </body>
+</html>

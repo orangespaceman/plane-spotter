@@ -1,0 +1,1 @@
+rsync ./ pi@pi:~/plane-spotter --exclude=.DS_Store --exclude=deploy.sh --exclude=node_modules --exclude=.git --progress --rsh=ssh --recursive --verbose --delete --links
