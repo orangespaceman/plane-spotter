@@ -68,5 +68,7 @@ The app uses a collection of placeholder images (selected at random) if no plane
 
 ## More information and inspiration
 
+- [ourairports.com](http://ourairports.com/) for the Airport data
+- [Virtual Radar Server](http://www.virtualradarserver.co.uk) for the Flight route data
 - [http://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/](http://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/)
 - [http://jeremybmerrill.com/uncategorized/2016/01/24/flyover.html](http://jeremybmerrill.com/uncategorized/2016/01/24/flyover.html)
