@@ -1,0 +1,14 @@
+{
+  "short_name": "Plane Spotter",
+  "name": "Plane Spotter",
+  "icons": [
+    {
+      "src": "images/thumb.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape"
+}
