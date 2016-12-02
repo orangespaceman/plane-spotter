@@ -109,11 +109,13 @@ function displayPlaceholderImage (state) {
         delete state.distance
         state.route = {}
 
-        const path = 'client/images/placeholder/'
+        const path = config.placeholderPath
         const files = fs.readdirSync(path)
         const image = files[Math.floor(Math.random() * files.length)]
 
-        state.imagePath = path.replace('client/', '') + image
+        app.use(express.static(config.placeholderPath))
+
+        state.imagePath = path.replace(config.placeholderPath, '') + image
         state.route.description = image.replace('.jpg', '').replace('-', ' ') + ' (placeholder)'
 
         debug.log('Displaying placeholder image', state.route.description)

@@ -1,8 +1,10 @@
 const config = {
     // planeData: './example-plane-data.json',
+    // planeData: './example-plane-data-empty.json',
     planeData: '/run/dump1090-mutability/aircraft.json',
     debug: false,
     port: 3000,
+    placeholderPath: 'client/images/placeholder/',
     position: {
         latitude: 50.829,
         longitude: -0.141
